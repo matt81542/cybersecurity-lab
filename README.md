@@ -39,7 +39,7 @@ A collection of cybersecurity practice projects, scripts, and notes. This reposi
 - Notes on protocols, suspicious traffic, etc.
 
 ---
-**🔄 **Tool Maintenance**
+🔄 **Tool Maintenance**
 
 I regularly update and improve scripts as I learn more efficient or secure techniques.  
 Expect small changes, improved error handling, and additional features over time.

@@ -39,6 +39,15 @@ A collection of cybersecurity practice projects, scripts, and notes. This reposi
 - Notes on protocols, suspicious traffic, etc.
 
 ---
+**🔄 **Tool Maintenance**
+
+I regularly update and improve scripts as I learn more efficient or secure techniques.  
+Expect small changes, improved error handling, and additional features over time.
+
+Current focus:
+- Making tools modular and reusable
+- Adding argparse for cleaner CLI usage
+- Logging results to files
 
 ## 🧠 Learning Goals
 

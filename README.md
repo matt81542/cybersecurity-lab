@@ -1,12 +1,59 @@
-# cybersecurity-lab
-My collection of cybersecurity practice projects and scripts
+# 🛡️ cybersecurity-lab
 
-This repo contains projects and learning resources I've worked on while developing my cybersecurity skills.
+A collection of cybersecurity practice projects, scripts, and notes. This repository helps document my hands-on learning journey in cybersecurity — from scanning and scripting to log analysis and packet capture.
 
-## Projects
+---
 
-- Sample Nmap scans
-- Vulnerability scan write-ups
-- SIEM logs and analysis
-- Wireshark packet captures
-- Python tools (basic automation scripts)
+## 📁 Project Structure
+
+| Folder | Contents |
+|--------|----------|
+| `nmap/` | Sample Nmap scans and outputs |
+| `vulns/` | Vulnerability scan write-ups |
+| `siem/` | SIEM logs and analysis notes |
+| `wireshark/` | Packet captures and notes |
+| `tools/` | Custom Python tools (network scanner, log parser, etc.) |
+
+---
+
+## 🚀 Projects & Tools
+
+### 🔍 Nmap Scans
+- Basic Nmap commands and saved results
+- Scripts to parse or filter scan outputs *(coming soon)*
+
+### 🛠️ Python Tools
+- `scan_network.py`: Scans a given IP range and prints host/port info
+- More tools in progress...
+
+### 🧪 Vulnerability Scanning
+- Write-ups from using Nessus/OpenVAS or manual enumeration
+
+### 📊 SIEM & Logs
+- Sample logs
+- Manual and automated analysis approaches
+
+### 🌐 Wireshark Captures
+- `.pcap` files and explanations of what they reveal
+- Notes on protocols, suspicious traffic, etc.
+
+---
+
+## 🧠 Learning Goals
+
+- Deepen practical skills in scanning, detection, and automation
+- Use Python to speed up security tasks
+- Learn to document findings clearly
+
+---
+
+## 📌 In Progress
+- Port sweeper tool
+- Basic log parser
+- Capture and analyze sample packets
+
+---
+
+## 📫 Contact / Questions?
+
+Feel free to fork this repo, submit issues, or connect with me as I build up more projects.

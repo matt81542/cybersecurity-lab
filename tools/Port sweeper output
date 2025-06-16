@@ -1,0 +1,21 @@
+Enter target IP (e.g., 192.168.1.1): 192.168.0.19
+
+Sweeping ports on 192.168.0.19...
+
+[-] Port 21 is closed
+[-] Port 22 is closed
+[-] Port 23 is closed
+[-] Port 25 is closed
+[-] Port 53 is closed
+[-] Port 80 is closed
+[-] Port 110 is closed
+[+] Port 135 is OPEN
+[+] Port 139 is OPEN
+[-] Port 143 is closed
+[-] Port 443 is closed
+[+] Port 445 is OPEN
+[-] Port 993 is closed
+[-] Port 995 is closed
+[-] Port 3306 is closed
+[-] Port 3389 is closed
+[-] Port 8080 is closed

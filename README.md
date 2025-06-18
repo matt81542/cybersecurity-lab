@@ -27,6 +27,13 @@ A collection of cybersecurity practice projects, scripts, and notes. This reposi
 - `port_sweeper.py`: Basic port scan over a range of IPs (WIP)
 - More tools coming soon (packet capture, log parser, etc.)
 
+## Setup
+
+Install required Python packages:
+```bash
+pip install -r requirements.txt
+
+
 ### 🧪 Vulnerability Scanning
 - Write-ups from using Nessus/OpenVAS or manual enumeration
 

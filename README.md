@@ -26,18 +26,6 @@ A collection of cybersecurity practice projects, scripts, and notes. This reposi
 - `scan_network.py`: Scans a given IP range and prints host/port info
 - `port_sweeper.py`: Basic port scan over a range of IPs (WIP)
 - More tools coming soon (packet capture, log parser, etc.)
-🔍 Network Scanner Tool
-
-This script detects live devices on your local network using Nmap.
-
-### 📄 File:
-`tools/scan_network.py`
-
-### ✅ Usage:
-
-Make sure Nmap is installed and in your PATH.
-
-python tools/scan_network.py 192.168.0.0/24
 
 ### 🧪 Vulnerability Scanning
 - Write-ups from using Nessus/OpenVAS or manual enumeration

@@ -1,18 +1,22 @@
 import nmap
+import sys
 
-def scan_network(ip_range):
-    scanner = nmap.PortScanner()
-    print(f"Scanning {ip_range}...")
-    scanner.scan(hosts=ip_range, arguments='-sS -T4')
-    
-    for host in scanner.all_hosts():
-        print(f"\nHost: {host} ({scanner[host].hostname()})")
-        print(f"State: {scanner[host].state()}")
-        for proto in scanner[host].all_protocols():
-            ports = scanner[host][proto].keys()
-            for port in sorted(ports):
-                print(f"Port: {port}\tState: {scanner[host][proto][port]['state']}")
+# Check if subnet/IP is given as argument
+if len(sys.argv) != 2:
+    print("Usage: python scan_network.py <subnet>")
+    print("Example: python scan_network.py 192.168.1.0/24")
+    sys.exit(1)
 
-if __name__ == "__main__":
-    target_range = input("Enter IP range to scan (e.g., 192.168.1.0/24): ")
-    scan_network(target_range)
+subnet = sys.argv[1]
+
+# Create the Nmap PortScanner object
+nm = nmap.PortScanner()
+
+print(f"Scanning network {subnet}...")
+
+# Run a ping scan
+nm.scan(hosts=subnet, arguments='-sn')
+
+print("\n✅ Live hosts found:")
+for host in nm.all_hosts():
+    print(f"- {host}")

@@ -1,0 +1,2 @@
+- `basic_scan.txt` : Service version scan of scanme.nmap.org
+- nmap -sV scanme.nmap.org -oN basic_scan.txt

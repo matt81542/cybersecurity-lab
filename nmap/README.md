@@ -12,6 +12,16 @@ This folder contains saved Nmap scan results and the commands used to generate t
 
 ```bash
 nmap -sV scanme.nmap.org -oN basic_scan.txt
+
+```
 - **Scan Type**:
   - `-sV` → Service version detection
   - `-oN` → Normal output format (plain text)
+
+```
+### `aggressive_scan.txt`
+- **Description**: Full-featured scan with OS detection, version info, script scanning, and traceroute
+- **Command Used**:
+
+```bash
+nmap -A scanme.nmap.org -oN aggressive_scan.txt

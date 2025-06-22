@@ -17,6 +17,7 @@ nmap -sV scanme.nmap.org -oN basic_scan.txt
 - **Scan Type**:
   - `-sV` → Service version detection
   - `-oN` → Normal output format (plain text)
+  - `-A` → Aggressive scan (includes OS detection, version detection, traceroute, and default scripts)
 
 
 ### `aggressive_scan.txt`

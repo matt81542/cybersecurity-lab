@@ -7,9 +7,10 @@ This folder contains an example Splunk query (SPL) to detect repeated failed log
 ## Query Explanation
 
 ```spl
-index=your_index sourcetype=your_sourcetype ("failed login" OR "authentication failure")
+source="auth.log" sourcetype="linux_secure" "Failed password"
+| rex field=_raw "from (?<src_ip>\d+\.\d+\.\d+\.\d+)"
 | stats count by src_ip
-| where count > 5
+| where count > 3
 | sort - count
 
 ```

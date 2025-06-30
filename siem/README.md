@@ -11,3 +11,6 @@ index=your_index sourcetype=your_sourcetype ("failed login" OR "authentication f
 | stats count by src_ip
 | where count > 5
 | sort - count
+
+```
+See example output: [failed_login_detection_results.csv](./failed_login_detection_results.csv)

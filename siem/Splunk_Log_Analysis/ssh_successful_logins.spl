@@ -1,0 +1,4 @@
+source="auth2.log" sourcetype="test_auth2" "Accepted password"
+| rex field=_raw "Accepted password for (?<username>\w+) from (?<src_ip>\d+\.\d+\.\d+\.\d+)"
+| stats count by username, src_ip
+| sort - count

@@ -1,3 +1,5 @@
+![Tool Added](https://img.shields.io/badge/tool-WHOIS-blue)
+
 # 🛡️ cybersecurity-lab
 
 A collection of cybersecurity practice projects, scripts, and notes. This repository helps document my hands-on learning journey in cybersecurity — from scanning and scripting to log analysis and packet capture.

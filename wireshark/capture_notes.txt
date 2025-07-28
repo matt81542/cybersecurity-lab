@@ -1,0 +1,12 @@
+Capture: example_capture.pcapng
+Date: 28 July 2025
+
+- Action: Navigated to http://neverssl.com
+- Observed:
+  - Standard 3-way TCP handshake
+  - HTTP GET / request
+  - HTTP 200 OK response
+  - Headers and page content are visible in plaintext
+- Useful for:
+  - Demonstrating unencrypted traffic
+  - Practicing protocol-level inspection in Wireshark

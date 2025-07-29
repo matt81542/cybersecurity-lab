@@ -1,0 +1,15 @@
+Capture: dns_query_capture.pcapng
+Date: 29 July 2025
+
+- Action: Visited http://icanhazip.com in browser
+- Observed:
+  - DNS query to resolve domain
+  - Query sent via UDP on port 53
+  - Response returned IP address of icanhazip.com
+- Useful for:
+  - Understanding how DNS resolution works
+  - Exploring DNS packet structure
+  - Practicing filter use in Wireshark (e.g., `dns`)
+
+-filtered on 'dns'
+-added columns for source port and destination port

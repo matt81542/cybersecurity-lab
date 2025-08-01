@@ -1,0 +1,26 @@
+# Nmap 7.97 scan initiated Fri Aug  1 13:04:15 2025 as: nmap --script vuln --host-timeout 2m --script-timeout 20s -oN output_files/vuln_scan_limited.txt scanme.nmap.org
+Nmap scan report for scanme.nmap.org (45.33.32.156)
+Host is up (0.17s latency).
+Other addresses for scanme.nmap.org (not scanned): 2600:3c01::f03c:91ff:fe18:bb2f
+Not shown: 995 closed tcp ports (reset)
+PORT      STATE    SERVICE
+22/tcp    open     ssh
+80/tcp    open     http
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=scanme.nmap.org
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: http://scanme.nmap.org:80/
+|     Form id: nst-head-search
+|     Form action: /search/
+|     
+|     Path: http://scanme.nmap.org:80/
+|     Form id: nst-foot-search
+|_    Form action: /search/
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+427/tcp   filtered svrloc
+9929/tcp  open     nping-echo
+31337/tcp open     Elite
+
+# Nmap done at Fri Aug  1 13:04:51 2025 -- 1 IP address (1 host up) scanned in 35.27 seconds

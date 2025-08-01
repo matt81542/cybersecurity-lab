@@ -8,7 +8,7 @@ Metasploitable 2 is an intentionally vulnerable Linux VM designed for practicing
 
 ## Contents
 
-- `output_files/`: Scan results from Nmap, OpenVAS, and other tools.
+- `output_files/`: Scan results from Nessus and other tools.
 - `screenshots/`: Images of setup and scan outputs.
 - `notes.md`: Additional observations and troubleshooting notes.
 

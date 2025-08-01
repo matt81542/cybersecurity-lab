@@ -63,3 +63,4 @@ nmap --script vuln scanme.nmap.org -oN output_files/vuln_scan.txt
 nmap -sV --script vulners scanme.nmap.org -oN output_files/vulners_scan.txt
 ```
 
+> ⚠️ Note: The `vuln` scan was partially successful but encountered a known `nsock_loop` error on Windows before all scripts could complete. This is a documented issue with some NSE scripts on Windows systems.

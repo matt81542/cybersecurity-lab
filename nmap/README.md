@@ -27,11 +27,27 @@ nmap -sV scanme.nmap.org -oN basic_scan.txt
 ```bash
 nmap -A scanme.nmap.org -oN aggressive_scan.txt
 
-### Nmap Vulnerability Scan Script
+```
 
-Performs a version scan using `nmap -sV` and checks services against known CVEs using the `vulners` NSE script.
+# Nmap NSE Vulnerability Scan – Mini Cybersecurity Project
 
-### Usage
+This mini project demonstrates how to perform a vulnerability scan using Nmap and one of its NSE (Nmap Scripting Engine) scripts.
+
+## 🔧 Objective
+
+Use the `vulners` NSE script to scan a target and identify known vulnerabilities based on software version detection.
+
+---
+
+## 🛠️ Tools Used
+
+- **Nmap** (Network Mapper)
+- **vulners.nse** script
+- **Command line interface**
+
+---
+
+## 🖥️ Example Command
 
 ```bash
-python nse_vuln_scan.py
+nmap -sV --script vulners scanme.nmap.org -oN vulners_scan.txt

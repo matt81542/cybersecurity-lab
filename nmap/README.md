@@ -67,7 +67,7 @@ nmap -sV --script vulners scanme.nmap.org -oN output_files/vulners_scan.txt
 >
 > ---
 
-### ⚙️ 3. Troubleshooting the `vuln` Script Scan on Windows
+### ⚙️ Troubleshooting the `vuln` Script Scan on Windows
 
 During the initial full `vuln` category scan, the Nmap NSE engine crashed on Windows with an `nsock_loop` error. This is a known issue affecting long-running NSE scripts on some Windows setups.
 

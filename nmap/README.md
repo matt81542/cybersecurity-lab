@@ -51,3 +51,12 @@ Use the `vulners` NSE script to scan a target and identify known vulnerabilities
 
 ```bash
 nmap -sV --script vulners scanme.nmap.org -oN vulners_scan.txt
+```
+
+### 🔍 Option 3: Nmap Script Scan (NSE) - Vulnerability Scan
+
+Run a vulnerability scan using Nmap’s built-in vulnerability detection scripts:
+
+```bash
+nmap --script vuln scanme.nmap.org -oN output_files/vuln_scan.txt
+```

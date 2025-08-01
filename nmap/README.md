@@ -27,7 +27,7 @@ nmap -sV scanme.nmap.org -oN basic_scan.txt
 ```bash
 nmap -A scanme.nmap.org -oN aggressive_scan.txt
 
-## Nmap Vulnerability Scan Script
+### Nmap Vulnerability Scan Script
 
 Performs a version scan using `nmap -sV` and checks services against known CVEs using the `vulners` NSE script.
 

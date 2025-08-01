@@ -30,3 +30,9 @@ Files include:
 ---
 
 This setup allows reproducible scans and easy reference for future assessments.
+
+
+## Nessus Scan Report for Metasploitable2
+
+The full detailed Nessus vulnerability scan report can be viewed here:  
+[View Nessus Scan Report](vulns/metasploitable2/scan_reports/metatest_ol6d3n.html)

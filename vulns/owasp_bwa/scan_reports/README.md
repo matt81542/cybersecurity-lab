@@ -80,3 +80,76 @@ To view it, open the file in your browser.
 - Ping and Nmap were confirmed working before the scan.
 - The advanced scan includes web application tests which increase duration.
 
+# 🔍 OWASP Broken Web Apps — Basic Vulnerability Scan
+
+**Scan Type:** Basic scan using Nessus  
+**Target:** OWASP BWA VM  
+**Date:** [Insert date here]
+
+---
+
+## 🧾 Summary
+
+A basic vulnerability scan was performed against the OWASP BWA virtual machine using Nessus. The target exposed several open ports and services with outdated configurations and known vulnerabilities. Many of these issues are intentional, as OWASP BWA is designed for safe testing and training.
+
+---
+
+## 🔓 Open Ports and Services
+
+- **22/tcp** — OpenSSH  
+- **25/tcp** — Postfix SMTP  
+- **80/tcp** — Apache HTTP Server  
+- **139, 445/tcp** — Samba (SMBv1 enabled)  
+- **3306/tcp** — MySQL  
+- **8080/tcp** — Apache Tomcat  
+- **Others** — Additional services used by vulnerable apps
+
+---
+
+## ⚠️ Vulnerability Summary
+
+| Severity | Count | Examples |
+|----------|-------|----------|
+| 🔴 Critical | 2 | SSLv2/v3 Support, Unsupported OS (Ubuntu SEoL) |
+| 🟠 High | 2 | SWEET32, Samba Badlock |
+| 🟡 Medium | 13 | Self-signed certs, outdated jQuery, TLS 1.0, weak hashing |
+| 🔵 Low | 5+ | POODLE, ICMP timestamp, weak SSH algorithms |
+
+---
+
+## 📌 Notable Findings
+
+- **SSL/TLS Issues:**  
+  - SSLv2, SSLv3, and TLS 1.0 are supported  
+  - Self-signed and untrusted certificates  
+  - Weak ciphers (RC4, 3DES), weak hashes (SHA-1), and outdated protocols  
+
+- **Outdated Software:**  
+  - OS is marked End of Life (Ubuntu 10.04.x)  
+  - Apache and Tomcat default files accessible  
+  - jQuery vulnerable to XSS (< v3.5.0)
+
+- **Samba Vulnerabilities:**  
+  - Badlock CVE present  
+  - SMB signing not required (allows MITM attacks)
+
+- **Information Disclosure:**  
+  - Apache ETag header leakage  
+  - HTTP TRACE enabled  
+  - SSH and ICMP configurations allow fingerprinting
+
+---
+
+## 📁 Files Included
+
+- `owasp_bwa_basic_scan.md` — this summary  
+- `owasp_bwa_basic_scan.html` — full HTML report exported from Nessus
+
+---
+
+## 💡 Notes
+
+- This VM is purposefully vulnerable for learning and testing.  
+- Many of these issues should never be present on production systems.  
+- Use this environment to practise detection, reporting, and patching.
+

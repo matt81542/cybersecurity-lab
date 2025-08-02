@@ -105,6 +105,7 @@ These vulnerabilities highlight a range of common misconfigurations and outdated
 Open the following file locally in a browser to view full plugin output:
 
 📁 **[Advanced Scan Report (HTML)](owasp%20bwa%20scan_oi2kyw.html)**
+
 ---
 
 ## 💡 Notes

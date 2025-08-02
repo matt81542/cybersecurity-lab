@@ -11,7 +11,7 @@ A collection of cybersecurity practice projects, scripts, and notes. This reposi
 | Folder | Contents |
 |--------|----------|
 | `nmap/` | Sample Nmap scans and outputs |
-| `vulns/` | Vulnerability scan write-ups |
+| `vulns/` | Vulnerability scan write-ups and VM labs |
 | `siem/` | SIEM logs and analysis notes |
 | `wireshark/` | Packet captures and notes |
 | `tools/` | Custom Python tools (network scanner, log parser, etc.) |
@@ -29,8 +29,10 @@ A collection of cybersecurity practice projects, scripts, and notes. This reposi
 - `port_sweeper.py`: Basic port scan over a range of IPs (WIP)
 - More tools coming soon (packet capture, log parser, etc.)
 
-### 🧪 Vulnerability Scanning
-- Write-ups from using Nessus/OpenVAS or manual enumeration
+### 🧪 Vulnerability Scanning & VM Labs
+- Vulnerability scan write-ups using Nessus, OpenVAS, and manual enumeration
+- Hands-on labs with vulnerable VMs like Metasploitable 2 and OWASP Broken Web Apps
+- Scan reports stored under respective `scan_reports/` subfolders for transparency and reference
 
 ### 📊 SIEM & Logs
 - Sample logs
@@ -41,6 +43,7 @@ A collection of cybersecurity practice projects, scripts, and notes. This reposi
 - Notes on protocols, suspicious traffic, etc.
 
 ---
+
 🔄 **Tool Maintenance**
 
 I regularly update and improve scripts as I learn more efficient or secure techniques.  
@@ -48,29 +51,12 @@ Expect small changes, improved error handling, and additional features over time
 
 Current focus:
 - Making tools modular and reusable
-- Adding argparse for cleaner CLI usage
 - Logging results to files
+
+---
 
 ## Setup
 
-Install required Python packages:
+Install required Python packages:  
+```bash
 pip install -r requirements.txt
-
-## 🧠 Learning Goals
-
-- Deepen practical skills in scanning, detection, and automation
-- Use Python to speed up security tasks
-- Learn to document findings clearly
-
----
-
-## 📌 In Progress
-- Port sweeper tool
-- Basic log parser
-- Capture and analyze sample packets
-
----
-
-## 📫 Contact / Questions?
-
-Feel free to fork this repo, submit issues, or connect with me as I build up more projects.

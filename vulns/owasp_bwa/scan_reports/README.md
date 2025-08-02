@@ -67,6 +67,7 @@ The scan confirmed that the VM hosts multiple services with outdated configurati
 📂 **Report File**:  
 Open the following file locally in a browser to view full plugin output:
 
+📁 **[Basic Scan Report (HTML)](Basic%20Scan%20-%20Owasp%20BWA_0q5sll.html)**
 
 ---
 
@@ -103,7 +104,7 @@ These vulnerabilities highlight a range of common misconfigurations and outdated
 📂 **Report File**:  
 Open the following file locally in a browser to view full plugin output:
 
-
+📁 **[Advanced Scan Report (HTML)](owasp%20bwa%20scan_oi2kyw.html)**
 ---
 
 ## 💡 Notes

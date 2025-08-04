@@ -27,7 +27,9 @@ sudo apt install -y gvm
 
 Once installed, run the GVM setup script:
 
+```bash
 sudo gvm-setup
+```
 
 This step:
 
@@ -48,6 +50,8 @@ Downloads vulnerability feed data
 
 Run the check script to ensure everything is configured correctly:
 
+```bash
 sudo gvm-check-setup
+```
 
 Look for all [OK] messages. If anything is marked [ERROR] or [WARNING], follow the guidance provided in the output to fix the issue.

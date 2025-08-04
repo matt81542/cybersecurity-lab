@@ -30,8 +30,11 @@ Once installed, run the GVM setup script:
 sudo gvm-setup
 
 This step:
+
 Creates a GVM admin user
+
 Generates certificates and config files
+
 Downloads vulnerability feed data
 
 ⚠️ At the end of the setup, note the password that is displayed for the admin user — it looks like a UUID and is required to log in to the web interface.

@@ -17,12 +17,13 @@ Keep the package list and system up to date:
 ```bash
 sudo apt update && sudo apt full-upgrade -y
 ```
-📦 Step 2: Install GVM
+
+## 📦 Step 2: Install GVM
 Install Greenbone Vulnerability Management from Kali’s repository:
 
 sudo apt install -y gvm
 
-🔄 Step 3: Run the Setup Script
+## 🔄 Step 3: Run the Setup Script
 
 Once installed, run the GVM setup script:
 
@@ -43,7 +44,7 @@ Downloads vulnerability feed data
 [*] Please note the password for the admin user
 [*] User created with password '5d4e2b62-3412-4b01-ba98-e63dd2912172'
 
-✅ Step 4: Verify Setup
+## ✅ Step 4: Verify Setup
 
 Run the check script to ensure everything is configured correctly:
 

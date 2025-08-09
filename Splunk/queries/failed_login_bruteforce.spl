@@ -1,0 +1,6 @@
+index=main sourcetype=linux_secure
+| rex "Failed password for (invalid user )?(?<user>[^\s]+)"
+| transaction user maxspan=5m
+| where eventcount > 5
+| table user eventcount duration _time
+| sort - eventcount

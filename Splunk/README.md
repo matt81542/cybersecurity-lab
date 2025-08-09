@@ -16,4 +16,4 @@ This repo demonstrates example SPL queries for SIEM detections using Splunk Clou
 1. Upload `failed_ssh.log` to Splunk Cloud, assign sourcetype `linux secure`.
 2. Run the queries in the `/queries` folder.
 3. Review dashboards or alerts built on these detections.
-4. See screenshots in `extracts` for example outputs.
+4. See csv files in `extracts` for example outputs.
